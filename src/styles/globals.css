@@ -1,3 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "UrbanistBold";
+  src: url("/font/Urbanist-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "UrbanistRegular";
+  src: url("/font/Urbanist-Regular.ttf") format("truetype");
+}
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -104,4 +115,13 @@ a {
   html {
     color-scheme: dark;
   }
+}
+span, p, label,button{
+  font-family: UrbanistRegular;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: UrbanistBold;
+}
+input, select{
+  background: #FAFAFA;
 }
